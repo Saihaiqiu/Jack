@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0232ccd9a824eb35a62af03c2aeb00de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0232ccd9a824eb35a62af03c2aeb00de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0232ccd9a824eb35a62af03c2aeb00de = L.map(
+                "map_0232ccd9a824eb35a62af03c2aeb00de",
+                {
+                    center: [35.5673, 118.94055],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd76533f7e616d2022fe648eacace182 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0232ccd9a824eb35a62af03c2aeb00de);
+        
+    
+            var marker_45527361384601753bf71c0369d4ee85 = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_0232ccd9a824eb35a62af03c2aeb00de);
+        
+    
+        var popup_cf0901145e77bf9da5d6d7dd01c86138 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61ba86bcd5b4328dd54b891f1cf2d7eb = $(`<div id="html_61ba86bcd5b4328dd54b891f1cf2d7eb" style="width: 100.0%; height: 100.0%;">Beijing</div>`)[0];
+            popup_cf0901145e77bf9da5d6d7dd01c86138.setContent(html_61ba86bcd5b4328dd54b891f1cf2d7eb);
+        
+
+        marker_45527361384601753bf71c0369d4ee85.bindPopup(popup_cf0901145e77bf9da5d6d7dd01c86138)
+        ;
+
+        
+    
+    
+            var marker_daea6d8a703f1ef3e1b9321e48187186 = L.marker(
+                [31.2304, 121.4737],
+                {}
+            ).addTo(map_0232ccd9a824eb35a62af03c2aeb00de);
+        
+    
+        var popup_80506fab8506ee6d4e4abc9f08d4ae72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7da89d9c2eb2044750c79189f2404440 = $(`<div id="html_7da89d9c2eb2044750c79189f2404440" style="width: 100.0%; height: 100.0%;">Shanghai</div>`)[0];
+            popup_80506fab8506ee6d4e4abc9f08d4ae72.setContent(html_7da89d9c2eb2044750c79189f2404440);
+        
+
+        marker_daea6d8a703f1ef3e1b9321e48187186.bindPopup(popup_80506fab8506ee6d4e4abc9f08d4ae72)
+        ;
+
+        
+    
+    
+            var poly_line_c5a2760928dee193e3bd00723a02fbe3 = L.polyline(
+                [[39.9042, 116.4074], [31.2304, 121.4737]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0232ccd9a824eb35a62af03c2aeb00de);
+        
+</script>
+</html>
